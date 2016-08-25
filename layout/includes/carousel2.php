@@ -52,8 +52,8 @@ if ($numslides) {
         <div class="carousel-inner" role="listbox">
             <?php
             for ($carouselslide = 1; $carouselslide <= $numslides; $carouselslide++) {
+                $slideurl = $slidetitle = $slidebutton = $slidecaption = $slideimage = '';
                 $slideurl = theme_uniglos_get_setting('slide' . $carouselslide . 'url');
-                $slideurltarget = theme_uniglos_get_setting('slide' . $carouselslide . 'target');
                 if (theme_uniglos_get_setting('slide' . $carouselslide . 'button')) {
                     $slidebutton = theme_uniglos_get_setting('slide' . $carouselslide . 'button');
                 } else {
@@ -76,15 +76,37 @@ if ($numslides) {
                         <img src="<?php echo $slideimage; ?>" alt="<?php echo $slidetitle; ?>"/>
                     </a>
                     <div class="container">
+                        <?php
+                        if ($slidetitle !='' || $slidecaption !='' || $slideurl !='') {
+                        ?>
                         <div class="carousel-caption">
-                            <h1><?php echo $slidetitle?></h1>
-                            <p class="carousel-caption-text"><?php echo $slidecaption; ?></p>
-                            <p class="carousel-button">
-                                <a class="btn btn-lg btn-primary" href="<?php echo $slideurl; ?>" role="button">
-                                    <?php echo $slidebutton ?>
-                                </a>
-                            </p>
+                            <?php
+                            if ($slidetitle !='') {
+                            ?>
+                                <h1><?php echo $slidetitle?></h1>
+                            <?php
+                            }
+                            if ($slidecaption !='') {
+                            ?>
+                                <p class="carousel-caption-text"><?php echo $slidecaption; ?></p>
+                            <?php
+                            }
+                            ?>
+                             <?php
+                            if ($slideurl !='') {
+                            ?>
+                                <p class="carousel-button">
+                                    <a class="btn btn-lg btn-primary" href="<?php echo $slideurl; ?>" role="button">
+                                        <?php echo $slidebutton ?>
+                                    </a>
+                                </p>
+                            <?php
+                            }
+                            ?>
                         </div>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
 
