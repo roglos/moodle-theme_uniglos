@@ -211,8 +211,10 @@
 #page-site-index #page-content {
     min-height:0;
 }
-#page-login-index footer {
-    bottom:0;
-    position:absolute;
-    width:100%;
+@media screen and (min-height:800px) {
+    #page-login-index footer {
+        bottom:0;
+        position:absolute;
+        width:100%;
+    }
 }

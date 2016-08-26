@@ -26,21 +26,10 @@ body {
     background:#fff;
 }
 
-.linkspot1 i.fa,
-.linkspot2 i.fa,
-.linkspot3 i.fa,
-.linkspot4 i.fa,
-.linkspot5 i.fa,
-.linkspot6 i.fa {
-    display:none;
-}
 .linkspot1 .linkspots-block,
 .linkspot1 .linkspots-icon,
 .linkspot1 img {
     border-color:[[setting:linkspots1colour]];
-}
-.linkspot1 .linkspots-icon {
-    background: #ffffff url([[pix:theme|linkspots/library]]) center center;
 }
 .linkspot1 h4 {
     color:[[setting:linkspots1colour]];
@@ -51,9 +40,6 @@ body {
 .linkspot2 img {
     border-color:[[setting:linkspots2colour]];
 }
-.linkspot2 .linkspots-icon {
-    background: #ffffff url([[pix:theme|linkspots/greenchevron]]) center center;
-}
 .linkspot2 h4 {
     color:[[setting:linkspots2colour]];
 }
@@ -61,9 +47,6 @@ body {
 .linkspot3 .linkspots-icon,
 .linkspot3 img {
     border-color:[[setting:linkspots3colour]];
-}
-.linkspot3 .linkspots-icon {
-    background: #ffffff url([[pix:theme|linkspots/mahara]]) center center;
 }
 .linkspot3 h4 {
     color:[[setting:linkspots3colour]];
@@ -73,9 +56,6 @@ body {
 .linkspot4 img  {
     border-color:[[setting:linkspots4colour]];
 }
-.linkspot4 .linkspots-icon {
-    background: #ffffff url([[pix:theme|linkspots/purplechevron]]) center center;
-}
 .linkspot4 h4 {
     color:[[setting:linkspots4colour]];
 }
@@ -84,9 +64,6 @@ body {
 .linkspot5 img  {
     border-color:[[setting:linkspots5colour]];
 }
-.linkspot5 .linkspots-icon {
-    background: #ffffff url([[pix:theme|linkspots/moodle]]) center center;
-}
 .linkspot5 h4 {
     color:[[setting:linkspots5colour]];
 }
@@ -94,9 +71,6 @@ body {
 .linkspot6 .linkspots-icon,
 .linkspot6 img  {
     border-color:[[setting:linkspots6colour]];
-}
-.linkspot6 .linkspots-icon {
-    background: #ffffff url([[pix:theme|linkspots/library]]) center center;
 }
 .linkspot6 h4 {
     color:[[setting:linkspots6colour]];

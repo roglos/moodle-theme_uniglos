@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2016080805;
+$plugin->version   = 2016080806;
 $plugin->requires  = 2016051900;
 $plugin->component = 'theme_uniglos';
 $plugin->dependencies = array(

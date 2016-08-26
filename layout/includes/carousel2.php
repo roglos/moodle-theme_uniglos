@@ -72,38 +72,34 @@ if ($numslides) {
                 }
                 ?>
                 <div class="item <?php echo $active;?>">
-                    <a href="<?php echo $slideurl; ?>">
-                        <img src="<?php echo $slideimage; ?>" alt="<?php echo $slidetitle; ?>"/>
-                    </a>
+                    <img src="<?php echo $slideimage; ?>" alt="<?php echo $slidetitle; ?>"/>
                     <div class="container">
                         <?php
-                        if ($slidetitle !='' || $slidecaption !='' || $slideurl !='') {
+                        if ($slidetitle != '' || $slidecaption != '' || $slideurl != '') {
                         ?>
-                        <div class="carousel-caption">
-                            <?php
-                            if ($slidetitle !='') {
-                            ?>
-                                <h1><?php echo $slidetitle?></h1>
-                            <?php
-                            }
-                            if ($slidecaption !='') {
-                            ?>
-                                <p class="carousel-caption-text"><?php echo $slidecaption; ?></p>
-                            <?php
-                            }
-                            ?>
-                             <?php
-                            if ($slideurl !='') {
-                            ?>
-                                <p class="carousel-button">
-                                    <a class="btn btn-lg btn-primary" href="<?php echo $slideurl; ?>" role="button">
-                                        <?php echo $slidebutton ?>
-                                    </a>
-                                </p>
-                            <?php
-                            }
-                            ?>
-                        </div>
+                            <div class="carousel-caption">
+                                <?php
+                                if ($slidetitle != '') {
+                                ?>
+                                    <h1><?php echo $slidetitle?></h1>
+                                <?php
+                                }
+                                if ($slidecaption != '') {
+                                ?>
+                                    <p class="carousel-caption-text"><?php echo $slidecaption; ?></p>
+                                <?php
+                                }
+                                if ($slideurl != '') {
+                                ?>
+                                    <p class="carousel-button">
+                                        <a class="btn btn-lg btn-primary" href="<?php echo $slideurl; ?>" role="button">
+                                            <?php echo $slidebutton ?>
+                                        </a>
+                                    </p>
+                                <?php
+                                }
+                                ?>
+                            </div>
                         <?php
                         }
                         ?>

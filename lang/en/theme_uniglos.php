@@ -108,8 +108,6 @@ $string['togglelinkspotsdesc'] = 'Choose if you wish to hide or show the linkspo
 $string['numberoflinkspots'] = 'Number of link spots';
 $string['numberoflinkspots_desc'] = 'Number of link spots. You can set upto 6.';
 $string['linkspot'] = 'Link spot ';
-$string['linkspotimage'] = 'Link spot image';
-$string['linkspotimagedesc'] = 'A file picker to drag your images. Ideally ensure all your images are the same size.';
 $string['linkspotstitle'] = 'Title';
 $string['linkspotstitledesc'] = 'Title to show in this linkspots spot.';
 $string['linkspotsurl'] = 'URL';
@@ -118,6 +116,8 @@ $string['linkspotsicon'] = 'Icon';
 $string['linkspotsicondesc'] = 'Name of the icon you wish to use. List is <a href="http://fontawesome.github.io/Font-Awesome/cheatsheet/" target="_new">here</a>.  Just enter what is after the "fa-".';
 $string['linkspotsimage'] = 'Image';
 $string['linkspotsimagedesc'] = 'This provides the option of displaying an image above the text in the linkspots spot.';
+$string['linkspotscentralimage'] = 'Link spot central image';
+$string['linkspotscentralimagedesc'] = 'A file picker to drag your images for the central icon. If used, this will override any fontawesome icon added above. If left blank a FA icon (selected or default) will be added to the central icon area.';
 $string['alwaysdisplay'] = 'Always show';
 $string['displaybeforelogin'] = 'Show before login only';
 $string['displayafterlogin'] = 'Show after login only';

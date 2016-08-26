@@ -46,3 +46,18 @@ header.moodleheader {
         display:none;
     }
 }
+@media screen and (max-width:769px) {
+    header.moodleheader {
+        margin-top:75px;
+    }
+}
+@media screen and (max-width:520px) {
+    header.moodleheader {
+        .container-fluid {
+            background:url([[pix:theme|logo-uniglo-small]]) no-repeat right bottom;
+        }
+        .logo {
+            background:url([[pix:theme|moodle-logo-small]]) no-repeat left bottom;
+        }
+    }
+}

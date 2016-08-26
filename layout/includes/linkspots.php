@@ -36,18 +36,30 @@ $colspan = "flexcontent";
             $url = theme_uniglos_get_setting('linkspots'.$linkspot.'url');
             $class = 'linkspot'.$linkspot.' '.$colspan;
             $linkspotimage = $OUTPUT->pix_url('linkspots/default', 'theme');
+            $linkspotcentralimage = '';
             if (theme_uniglos_get_setting('linkspots' . $linkspot . 'image')) {
                 $linkspotimage = $PAGE->theme->setting_file_url('linkspots' . $linkspot .
                         'image', 'linkspots' . $linkspot . 'image');
             }
+            if (theme_uniglos_get_setting('linkspots' . $linkspot . 'centralimage')) {
+                $linkspotcentralimage = $PAGE->theme->setting_file_url('linkspots' . $linkspot .
+                        'centralimage', 'linkspots' . $linkspot . 'centralimage');
+            }
+
         ?>
                 <div class="linkspots-wrapper <?php echo $class;?>">
                     <a href="<?php echo $url;?>">
 
                     <div class="linkspots-block">
-                        <img src="<?php echo $linkspotimage;?>">
+                        <img class='linkspotbkground' src="<?php echo $linkspotimage;?>">
                         <div class="linkspots-icon">
-                            <i class="fa fa-3x fa-<?php echo $icon;?>"></i>
+                            <?php
+                            if ($linkspotcentralimage != '') {
+                                echo '<img class="linkspotcentral" src=' . $linkspotcentralimage . '>';
+                            } else {
+                                echo '<i class="fa fa-3x fa-' . $icon . '"></i>';
+                            }
+                            ?>
                         </div>
                         <h4 class="linkspot-title">
                             <?php echo $title;?>

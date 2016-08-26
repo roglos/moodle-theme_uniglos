@@ -109,6 +109,14 @@ $temp->add(new admin_setting_heading('theme_uniglos_linkspots', get_string('link
         $setting->set_updatedcallback('theme_reset_all_caches');
         $temp->add($setting);
 
+        // Central Image.
+        $name = 'theme_uniglos/linkspots'.$i.'centralimage';
+        $title = get_string('linkspotscentralimage', 'theme_uniglos');
+        $description = get_string('linkspotscentralimagedesc', 'theme_uniglos');
+        $setting = new admin_setting_configstoredfile($name, $title, $description, 'linkspots'.$i.'centralimage');
+        $setting->set_updatedcallback('theme_reset_all_caches');
+        $temp->add($setting);
+
         // Image.
         $name = 'theme_uniglos/linkspots'.$i.'image';
         $title = get_string('linkspotsimage', 'theme_uniglos');

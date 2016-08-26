@@ -171,6 +171,8 @@ function theme_uniglos_pluginfile($course, $cm, $context, $filearea, $args, $for
         return $theme->setting_file_serve($filearea, $args, $forcedownload, $options);
     } else if (preg_match("/linkspots[1-9][0-9]*image/", $filearea) !== false) { // Link spot images.
         return $theme->setting_file_serve($filearea, $args, $forcedownload, $options);
+    } else if (preg_match("/linkspots[1-9][0-9]*centralimage/", $filearea) !== false) { // Link spot central images.
+        return $theme->setting_file_serve($filearea, $args, $forcedownload, $options);
     } else if ($filearea === 'loginbg') {
             return $theme->setting_file_serve('loginbg', $args, $forcedownload, $options);
     } else {
