@@ -44,7 +44,7 @@
 </nav>
 <header class="moodleheader">
     <div class="container-fluid">
-        <a href="<?php echo $CFG->wwwroot ?>" class="logo">&nbsp;</a>
+        <a href="<?php echo $CFG->wwwroot ?>" class="logo" alt="Logo Home link">&nbsp;</a>
         <?php echo $OUTPUT->page_heading(); ?>
     </div>
 </header>
